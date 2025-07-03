@@ -9,7 +9,7 @@ import jakarta.persistence.EntityTransaction;
 import java.util.UUID;
 
 public class LocationDAO {
-    private EntityManager entityManager;
+    private final EntityManager entityManager;
 
     public LocationDAO(EntityManager entityManager){
         this.entityManager=entityManager;
@@ -22,8 +22,8 @@ public class LocationDAO {
         System.out.println("Location aggiunta con successo!");
 
     }
-    public Location getById(UUID id){
-        Location found= entityManager.find(Evento.class,id);
+    public Location getById(long id){
+        Location found= entityManager.find(Location.class,id);
         if (found == null)throw new NotFoundException(id);
         return found;
     }

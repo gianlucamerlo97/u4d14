@@ -11,7 +11,7 @@ import java.util.UUID;
 public abstract class Evento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID id;
+    private long id;
     @Column(name = "titolo",nullable = false)
     private String titolo;
     @Column(name = "data", nullable = false)

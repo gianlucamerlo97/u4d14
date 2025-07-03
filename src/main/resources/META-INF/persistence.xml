@@ -7,6 +7,7 @@
         <class>gianlucamerlo.entities.Location</class>
         <class>gianlucamerlo.entities.Persona</class>
         <class>gianlucamerlo.entities.Partecipazione</class>
+        <class>gianlucamerlo.entities.PartitaDiCalcio</class>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/gestioneeventi"/>
 

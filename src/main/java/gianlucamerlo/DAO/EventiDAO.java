@@ -7,7 +7,7 @@ import jakarta.persistence.EntityTransaction;
 
 public class EventiDAO {
 
-    private EntityManager entityManager;
+    private final EntityManager entityManager;
 
     public EventiDAO(EntityManager entityManager){
         this.entityManager=entityManager;

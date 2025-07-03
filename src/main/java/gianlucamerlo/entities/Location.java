@@ -9,7 +9,7 @@ import java.util.UUID;
 public class Location {
     @Id
     @GeneratedValue(strategy =GenerationType.IDENTITY )
-    private UUID id;
+    private long id;
     @Column
     private String name;
     @Column
