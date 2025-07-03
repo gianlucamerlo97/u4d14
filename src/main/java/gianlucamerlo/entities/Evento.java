@@ -8,7 +8,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "evento")
-public class Evento {
+public abstract class Evento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private UUID id;
